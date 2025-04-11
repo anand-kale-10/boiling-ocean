@@ -42,6 +42,9 @@
         .desc{
           display: none;
         }
+        .ct{
+          
+        }
       }
     .btn-group{
       display: flex;
@@ -55,6 +58,10 @@
         align-items: center;
         gap: 8px;
       }
+    }
+    .btn-group2{
+      justify-content: center;
+      align-items: center;
     }
     }
     #nextSection{
