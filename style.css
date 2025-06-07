@@ -29,7 +29,7 @@ nav,
 #navbar{
   justify-content: space-around;
   align-items: center;
-  height: 12vh;
+  height: 10vh;
   background-color: rgb(250, 240, 255);
   transition: background-color 0.3s ease;
   z-index: 1000;
@@ -90,8 +90,8 @@ a {
 /* ABOUT */
 .container {
       display: flex;
-      height: 88vh; /* Full viewport height */
-      margin-top: 12vh;
+      height: 100vh; /* Full viewport height */
+      /* margin-top: 12vh; */
     }
 
     .left, .right {
@@ -104,6 +104,44 @@ a {
 
     .left {
       background-color: #f0f0f0;
+      .greet {
+        font-size: 1.5rem;
+        /* text-align: left; */
+        font-weight: 500;
+        span{
+          font-size: 2rem;
+          font-weight: 600;
+          background: linear-gradient(90deg, #3b2752, #40406d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        h5{
+          font-size: 1.25rem;
+          letter-spacing: 8px;
+        }
+        .btn1 {
+          margin-top: 1.4rem;
+          padding: 8px;
+          border-radius: 25px;
+          color: #ffffff;
+          font-weight: medium ;
+          border: none;
+          font-size: 12px;
+          background: linear-gradient(45deg, #3b2752, #40406d);
+
+        }
+        .btn2 {
+          margin-top: 1.4rem;
+          padding: 8px;
+          border-radius: 25px;
+          color: #ffffff;
+          font-weight: medium ;
+          border: none;
+          font-size: 12px;
+          background: linear-gradient(45deg, #3b2752, #40406d);
+
+        }
+      }
     }
 
     .right {
@@ -116,3 +154,25 @@ a {
       left: 20px;
       font-size: 24px;
     }
+
+.split-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+}
+
+.left-section,
+.right-section {
+  width: 50%;
+  padding: 40px;
+  color: black;
+}
+
+.left-section {
+  background-color: #d0d0d0;
+}
+
+.right-section {
+  background-color: #f0f0f0;
+}

@@ -12,11 +12,26 @@
   .left {
     flex: 1 1 100%;
     width: 100%;
+    .greet {
+      text-align: center;
+    }
+  }
 
-    .hamburger {
+  .hamburger {
     display: block;
   }
+.split-container {
+    flex-direction: column;
+  }
+
+.left-section{
+  width: 100%;
+  height: 40vh;
 }
+  .right-section {
+    width: 100%;
+    height: 60vh;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,3 +84,5 @@ a {
   .nav-links {
     display: flex !important;
     flex-direction: row;
+  }
+
