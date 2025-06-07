@@ -5,67 +5,67 @@
     #hamburger-nav {
       display: flex;
     }
-    .down-arrow {
-      bottom: 100px;
-    }
-    
-    #about{
-      height: fit-content;
-      width: 100%;
-      .right{
-        display: none;
-      }
-      .left{
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-        width: 100vw;
-        .greet{
-          text-align: center;
-          
-        }
-        .name{
-          text-align:center;
-          font-size: 2rem;
-        }
-        .intro{
-          text-align: center;
-          font-size: 1.25rem;
-        }
-        .fd{
-          text-align: center;
-          font-size: 1rem;
-        }
-        .desc{
-          display: none;
-        }
-        .ct{
-          
-        }
-      }
-    .btn-group{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .ct{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-      }
-    }
-    .btn-group2{
-      justify-content: center;
-      align-items: center;
-    }
-    }
-    #nextSection{
-      height: 87.5vh;
-      width: 100%;
-    }
+    .right {
+    display: none;
   }
+
+  .left {
+    flex: 1 1 100%;
+    width: 100%;
+
+    .hamburger {
+    display: block;
+  }
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: linear-gradient(90deg, rgb(121, 78, 173), #40406d);
+    border-radius: 8px;
+    flex-direction: column;
+    width: 25vw;
+    display: none;
+    padding: 1rem;
+    color: white;
+    
+  }
+
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+  gap: 2rem;
+}
+.nav-links a:hover {
+  color: #eeeeee;
+  text-decoration: none;
+  /* text-underline-offset: 0.75rem; */
+  text-decoration-color: #fefefe;
+}
+  .nav-links.active {
+
+    display: flex;
+  }
+  .title{
+    display: none;
+  }
+  .title2{
+    display: flex;
+  }
+}
+@media (min-width: 1201px) {
+  #hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
